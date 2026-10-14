@@ -302,13 +302,35 @@ body{
 
     <div class="header">
 
-        <img src="/static/logo.png" class="logo" alt="Logo" onerror="this.style.display='none'">
+        <img src="/static/logo.jpeg" class="logo">
+
+        <img src="/static/demologo.jpeg" class="demo-logo">
 
         <div class="header-title">
             MAIN DISPLAY
         </div>
 
+        <div class="menu-container">
 
+            <button class="menu-btn" onclick="toggleMenu(event)">
+
+                <span class="material-symbols-outlined">
+                    apps
+                </span>
+
+            </button>
+
+            <div id="menu" class="menu">
+
+                <a href="/">Main Display</a>
+
+                <a href="/operator">Calling Unit</a>
+
+                <a href="/kiosk">Token Dispenser</a>
+
+            </div>
+
+        </div>
 
     </div>
 
@@ -362,13 +384,33 @@ body{
    RENDER BACKEND
 ========================================== */
 
-// If opened directly on Render, use same origin; otherwise fallback to backend URL
 const API_URL = (window.location.hostname.includes("onrender.com"))
     ? window.location.origin
     : "https://token-management-system-cvo8.onrender.com";
 
 
+/* ==========================================
+   MENU
+========================================== */
 
+function toggleMenu(event){
+
+    event.stopPropagation();
+
+    const menu = document.getElementById("menu");
+
+    menu.style.display =
+        menu.style.display === "block"
+        ? "none"
+        : "block";
+}
+
+
+window.addEventListener("click", function(){
+
+    document.getElementById("menu").style.display = "none";
+
+});
 
 
 /* ==========================================
