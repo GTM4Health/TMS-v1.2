@@ -221,7 +221,7 @@ input[type=text],input[type=password]{
     </div>
     <label>SERVER URL</label>
     <input type="text" name="server"
-           value="https://token-management-system-cvo8.onrender.com" required>
+           value="https://tms-v1-2.onrender.com" required>
     <button type="submit" class="submit-btn">Connect &amp; Save</button>
   </form>
   <p class="hint">Leave password blank for open networks.</p>
@@ -249,7 +249,7 @@ const char savedPage[] PROGMEM = R"rawliteral(
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="4;url=https://gtm-tms.vercel.app">
+<meta http-equiv="refresh" content="4;url=https://gtm-tms2.vercel.app">
 <title>Settings Saved!</title>
 <style>
 body{font-family:Arial,sans-serif;margin:0;background:#eef6fb;
@@ -268,7 +268,7 @@ a{color:#1683c4;text-decoration:none;font-weight:600;}
   <h2>&#10003; Settings Saved!</h2>
   <p>Device is restarting and connecting to WiFi...</p>
   <div class="count" id="c">4</div>
-  <p>Redirecting to<br><a href="https://gtm-tms.vercel.app">gtm-tms.vercel.app</a></p>
+  <p>Redirecting to<br><a href="https://gtm-tms2.vercel.app">gtm-tms2.vercel.app</a></p>
 </div>
 <script>
 var n=4;
@@ -278,7 +278,7 @@ var t=setInterval(function(){
   if(el) el.innerText=n;
   if(n<=0){
     clearInterval(t);
-    window.location.href='https://gtm-tms.vercel.app';
+    window.location.href='https://gtm-tms2.vercel.app';
   }
 },1000);
 </script>

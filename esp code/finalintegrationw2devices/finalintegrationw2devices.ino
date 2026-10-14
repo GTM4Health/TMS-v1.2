@@ -53,7 +53,7 @@ button{width:100%;padding:14px;margin-top:20px;background:#0b4f7c;color:white;bo
     <label>PASSWORD</label>
     <input type="password" name="password" placeholder="WiFi password">
     <label>SERVER URL</label>
-    <input type="text" name="server" value="https://token-management-system-cvo8.onrender.com" required>
+    <input type="text" name="server" value="https://tms-v1-2.onrender.com" required>
     <div class="toggle-row">
       <div>
         <div class="toggle-label">Print Pop-up</div>
@@ -94,7 +94,7 @@ a{color:#1683c4;text-decoration:none;}
   <h2>&#10003; Settings Saved!</h2>
   <p>ESP32 is connecting to your WiFi...</p>
   <div class="count" id="c">5</div>
-  <p>Redirecting to<br><a href="https://gtm-tms.vercel.app">gtm-tms.vercel.app</a></p>
+  <p>Redirecting to<br><a href="https://gtm-tms2.vercel.app">gtm-tms2.vercel.app</a></p>
 </div>
 <script>
 var PRINT_ENABLED = "PRINT_FLAG";
@@ -104,7 +104,7 @@ var t=setInterval(function(){
   if(n<=0){
     clearInterval(t);
     localStorage.setItem('printPopup', PRINT_ENABLED);
-    window.location.href='https://gtm-tms.vercel.app/kiosk';
+    window.location.href='https://gtm-tms2.vercel.app';
   }
 },1000);
 </script>
