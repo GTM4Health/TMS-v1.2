@@ -66,6 +66,7 @@ body{
     font-size:24px;
     font-weight:600;
     letter-spacing:1.5px;
+    margin-left:auto;
 }
 
 .menu-container{
@@ -310,27 +311,7 @@ body{
             MAIN DISPLAY
         </div>
 
-        <div class="menu-container">
 
-            <button class="menu-btn" onclick="toggleMenu(event)">
-
-                <span class="material-symbols-outlined">
-                    apps
-                </span>
-
-            </button>
-
-            <div id="menu" class="menu">
-
-                <a href="/">Main Display</a>
-
-                <a href="/operator">Calling Unit</a>
-
-                <a href="/kiosk">Token Dispenser</a>
-
-            </div>
-
-        </div>
 
     </div>
 
@@ -389,28 +370,7 @@ const API_URL = (window.location.hostname.includes("onrender.com"))
     : "https://tms-v1-2.onrender.com";
 
 
-/* ==========================================
-   MENU
-========================================== */
 
-function toggleMenu(event){
-
-    event.stopPropagation();
-
-    const menu = document.getElementById("menu");
-
-    menu.style.display =
-        menu.style.display === "block"
-        ? "none"
-        : "block";
-}
-
-
-window.addEventListener("click", function(){
-
-    document.getElementById("menu").style.display = "none";
-
-});
 
 
 /* ==========================================
