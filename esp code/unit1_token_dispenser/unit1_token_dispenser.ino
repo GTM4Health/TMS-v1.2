@@ -48,7 +48,7 @@ Preferences preferences;
 bool apMode = false;
 
 // ── Button ───────────────────────────────────────────────────
-const int     buttonPin        = 4;
+const int     buttonPin        = 4; // GPIO pin 4
 bool          lastButtonState  = HIGH;
 unsigned long buttonPressStart = 0;
 volatile bool buttonISRFlag    = false;
